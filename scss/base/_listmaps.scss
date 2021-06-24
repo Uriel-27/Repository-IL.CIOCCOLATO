@@ -1,0 +1,75 @@
+$maps-body: (
+    body: #002a3c,
+    word: aliceblue,
+    font1:'Abel',
+    pd-top: 40px,
+    pd-bottom: 40px, 
+    titulos: 50px,
+    subtitulos: 40px,
+    texto: 30px,
+);
+
+$maps-social: (
+    IG: pink,
+    tiktok: black,
+    twitter: blue,
+);
+
+/* bodys */
+
+body {
+    background-color: map-get($maps-body, body) !important;
+    color: map-get($maps-body, word) !important;
+    font-family: map-get($maps-body, font1)!important;
+    
+    /* index-principal */
+    .noticiaContainer {
+        margin-left: 40px!important;
+        margin-right: 40px !important;
+    }
+
+    .titulo-inicio {
+        padding-bottom: map-get($maps-body, pd-bottom)!important;
+    }
+
+    .parrafo-inicio {
+        font-size: map-get($maps-body,texto )!important;
+    }
+
+    .Combos {
+        font-size:map-get($maps-body, titulos )!important;
+        text-align: center!important;
+        padding-top: 40px!important;
+    }
+
+    .masVendido {
+        display: flex!important;
+        justify-content: space-evenly!important;
+        flex-wrap: wrap!important;
+    }
+
+    .verMas {
+        background-color:map-get($maps-body, word )!important;
+        color:map-get($maps-body, body )!important;
+        margin-left: 40px!important;
+        margin-right: 40px!important;
+    }
+    
+    .Redes {
+        text-align: center!important;
+        font-size:map-get($maps-body, titulos )!important;
+        padding-top:map-get($maps-body, pd-top )!important;
+    }
+    
+    .imagen-combo1:hover {
+        transform: scale(1.2)!important;
+    }
+    
+    .imagen-combo2:hover {
+        transform: scale(1.2)!important;
+    }
+    
+    .imagen-combo3:hover {
+        transform: scale(1.2)!important;
+    }
+}

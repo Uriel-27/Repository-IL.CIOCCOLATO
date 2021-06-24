@@ -1,0 +1,16 @@
+@mixin titulo ($color, $font, $bg-color) {
+    font-size: $font;
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin noticiaPrincipal ($colorIf) {
+    background-color: $colorIf;
+
+    @if $colorIf == chocolate {
+        border: 1px solid black;
+    } @else {
+        border: 2px solid white;
+    }
+}
+

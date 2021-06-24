@@ -1,0 +1,19 @@
+%Flexbox-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+%Flexbox-left {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.noticiaPrincipal {
+    @extend %Flexbox-left;
+}
+
+.instagram {
+    @extend %Flexbox-center;
+}
