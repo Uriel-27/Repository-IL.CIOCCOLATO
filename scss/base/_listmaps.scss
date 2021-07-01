@@ -1,9 +1,9 @@
 $maps-body: (
     body: #002a3c,
     word: aliceblue,
-    font1:'Abel',
+    font1:'Righteous',
     pd-top: 40px,
-    pd-bottom: 40px, 
+    pd-bottom: 30px, 
     titulos: 50px,
     subtitulos: 40px,
     texto: 30px,
@@ -20,12 +20,20 @@ $maps-social: (
 body {
     background-color: map-get($maps-body, body) !important;
     color: map-get($maps-body, word) !important;
-    font-family: map-get($maps-body, font1)!important;
+    font-family: map-get($maps-body, font1) !important;
     
     /* index-principal */
     .noticiaContainer {
-        margin-left: 40px!important;
-        margin-right: 40px !important;
+        margin-left: 210px!important;
+        margin-right: 210px !important;
+        padding: 50px 0;
+    }
+
+    .imagen-noticia-principal {
+        border: #883f0a solid 10px;
+        border-radius: 10px;
+        position: relative;
+        left: 45px;
     }
 
     .titulo-inicio {
@@ -33,19 +41,29 @@ body {
     }
 
     .parrafo-inicio {
-        font-size: map-get($maps-body,texto )!important;
+        font-size: map-get($maps-body,texto)!important;
+        padding-top: 50px;
+        position: relative;
+        right: 50px;
     }
 
     .Combos {
         font-size:map-get($maps-body, titulos )!important;
         text-align: center!important;
-        padding-top: 40px!important;
+        color: #002a3c;
+        padding-bottom: 10px;
     }
 
     .masVendido {
-        display: flex!important;
-        justify-content: space-evenly!important;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap!important;
+        padding-top: 20px;
+    }
+
+    .card-text {
+        color:#002a3c;
     }
 
     .verMas {
@@ -53,6 +71,21 @@ body {
         color:map-get($maps-body, body )!important;
         margin-left: 40px!important;
         margin-right: 40px!important;
+        text-align: right;
+    }
+
+    .verMas a {
+        color: aliceblue;
+        background-color: #002a3c;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .fondo-section-inicio {
+        background-color: aliceblue;
+        padding-top: 50px!important;
+        padding-bottom: 50px;
     }
     
     .Redes {
@@ -63,13 +96,19 @@ body {
     
     .imagen-combo1:hover {
         transform: scale(1.2)!important;
+        transition: 1s;
+        border-radius: 10px;
     }
     
     .imagen-combo2:hover {
         transform: scale(1.2)!important;
+        transition: 1s;
+        border-radius: 10px;
     }
     
     .imagen-combo3:hover {
         transform: scale(1.2)!important;
+        transition: 1s;
+        border-radius: 10px;
     }
 }

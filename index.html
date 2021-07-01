@@ -25,11 +25,18 @@
 
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
 
   <!-- Título de pestaña -->
   <!-- Entre 35 y 65 caracteres -->
@@ -40,22 +47,24 @@
   <!-- Banner -->
   <section>
     <img
-      src="imágenes/a37c1e02b9d658e51b74c5cff915509c-ilustracion-realista-de-chocolate-derretido-removebg-preview (1).png"
+      src="imágenes/a37c1e02b9d658e51b74c5cff915509c-ilustracion-realista-de-chocolate-derretido-removebg-preview (1).png" width="949"
+      alt="banner de chocolate derritiendose">
+      <img
+      src="imágenes/a37c1e02b9d658e51b74c5cff915509c-ilustracion-realista-de-chocolate-derretido-removebg-preview (1).png" width="949"
       alt="banner de chocolate derritiendose">
   </section>
 
   <!-- Cabecera -->
   <header>
     <div class="cabeceraHeader">
-
       <!-- logo principal -->
-      <a href="index.html"><img src="imágenes/logo-2021-05-02.jpeg" class="logoHeader" height="80"
-          alt="Logo de Il cioccolato"></a>
+        <h1 class="titulo"><a href="index.html">Il Cioccolato</a></h1>
+        
+        <h2 class="titulo2">Emprendimiento de chocolates</h2>
     </div>
 
-    <!-- jerarquiz de encabezados -->
-
-    <h1 class="titulo">Emprendimiento de chocolates</h1>
+    <!-- <img src="imágenes/logo-2021-05-02.jpeg" class="logoHeader" height="80"
+    alt="Logo de Il cioccolato"> -->
 
     <!-- menú -->
     <section class="nuevo-menu">
@@ -72,7 +81,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="menu/historia.html">Quiénes somos?</a>
+                <a class="nav-link active" href="menu/historia.html">¿Quiénes somos?</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link active dropdown-toggle" href="menu/productos.html" id="navbarDropdownMenuLink" role="button"
@@ -95,22 +104,60 @@
 
   </header>
 
-
-  <!-- noticia destacada -->
-  <section class="noticiaContainer">
-    <h2 class="titulo-inicio"> El legado del chocolate casero.</h2>
-    <img src="imágenes/bombones-2021-05-02.jpeg" height="400" alt="bombones de chocolate rellenos">
+    <!-- carrusel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imágenes/corazon-prodcutos-2021-05-02.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>First slide label</h4>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imágenes/mile-uri-2021-05-12.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Second slide label</h4>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imágenes/brownie-productos-2021-05-02.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Third slide label</h4>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="noticiaPrincipal">
-      <p class="parrafo-inicio">La historia de il Cioccolato nos lleva por un largo camino de relatos que comienzan su
-        andar allá en Argentina, a principios del siglo XXI,
-        la tierra de la mayoría de nuestros abuelos y bisabuelos.
-        Existió una mujer, Milena Azul Simon, que conocía y sostenía a la perfección la tradición familiar de sus
-        ancestros:
-        “La elaboración del chocolate artesanal“.
-      </p>
-    </div>
-  </section>
+    <!-- noticia destacada -->
+    <section class="noticiaContainer">
+      <h2 class="titulo-inicio"> El legado del chocolate casero:</h2>
+      <div class="noticiaPrincipal">
+        <img src="imágenes/bombones-2021-05-02.jpeg" height="400" class="imagen-noticia-principal" alt="bombones de chocolate rellenos">
+        <p class="parrafo-inicio">La historia de il Cioccolato nos lleva por un largo camino de relatos que comienzan su
+          andar allá en Argentina, a principios del siglo XXI,
+          la tierra de la mayoría de nuestros abuelos y bisabuelos.
+          Existió una mujer, Milena Azul Simon, que conocía y sostenía a la perfección la tradición familiar de sus
+          ancestros:
+          “La elaboración del chocolate artesanal“.
+        </p>
+      </div>
+      </div>
+    </section>
 
   <!-- combos más vendidos -->
   <section class="fondo-section-inicio">
@@ -118,20 +165,39 @@
 
     <div class="masVendido">
 
-      <img src="imágenes/combo-pascuas-2021-05-02.jpeg" class="imagen-combo1" height="250"
+      <div class="card" style="width: 22rem;">
+        <img src="imágenes/combo-pascuas-2021-05-02.jpeg" class="imagen-combo1 card-img-top" height="250"
         alt="Combo de huevos de pascuas">
+        <div class="card-body">
+          <h5 class="card-text">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+        </div>
+      </div>
 
-
-      <img src="imágenes/combo-jugo-2021-05-02.jpeg" class="imagen-combo2" height="250" alt="Combo para desayunar">
-
-
-      <img src="imágenes/combo-navidad-2021-05-02.jpeg" class="imagen-combo3" class="imagen-3" height="250"
+        <div class="card" style="width: 22rem;">
+          <img src="imágenes/combo-jugo-2021-05-02.jpeg" class="imagen-combo2 card-img-top" height="250" alt="Combo para desayunar">
+          <div class="card-body">
+            <h5 class="card-text">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+          </div>
+        </div>
+      
+      <div class="card" style="width: 22rem;">
+        <img src="imágenes/combo-navidad-2021-05-02.jpeg" class="imagen-combo3 card-img-top" class="imagen-3" height="250"
         alt="Combo de navidad variado">
+        <div class="card-body">
+          <h5 class="card-text">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+        </div>
+      </div>
 
     </div>
     <div class="verMas">
-    <a href="combos.html">
-      Ver más...
+    <a href="menu/combos.html">
+      ...ver más
     </a>
     </div>
   </section>
@@ -151,10 +217,12 @@
   <!-- banner -->
   <section>
     <img
-      src="imágenes/a37c1e02b9d658e51b74c5cff915509c-ilustracion-realista-de-chocolate-derretido-removebg-preview (1).png"
+      src="imágenes/a37c1e02b9d658e51b74c5cff915509c-ilustracion-realista-de-chocolate-derretido-removebg-preview (1).png" width="949"
+      alt="banner de chocolate derritiendose">
+      <img
+      src="imágenes/a37c1e02b9d658e51b74c5cff915509c-ilustracion-realista-de-chocolate-derretido-removebg-preview (1).png" width="949"
       alt="banner de chocolate derritiendose">
   </section>
-
 
   <!-- scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

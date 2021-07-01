@@ -2,29 +2,72 @@ $bg-color: #002a3c;
 $p-general: 40px;
 
 
-.header {
-    color: black !important;
+header {
+    color:aliceblue !important;
     background-color:$bg-color !important;
     padding: $p-general !important;
     font-size: 30px !important;
+
+    .cabeceraHeader {
+        text-align: center !important;
+        padding-bottom: 40px !important;
+        position: relative;
+        bottom: 45px;
+    }
+
+    .titulo a {
+        text-decoration: none !important;
+        color: aliceblue !important;
+        font-size: 70px !important;
+    }
+
+    .titulo a:hover {
+        color: rgb(136, 63, 10) !important;
+        transition: 1s;
+    }
+
+    .titulo2 {
+        color: rgb(136, 63, 10);
+    }
+
+    .nuevo-menu {
+        display: flex;
+        justify-content: center;
+        background-color: aliceblue;
+        font-size: 25px;
+    }
+
     @media only screen and (max-width: 601px) {
         .cabeceraHeader {
             display: flex !important;
-            justify-content: left !important;
+            justify-content: center !important;
+            .titulo a {
+                text-decoration: none !important;
+                font-size: 40px !important;
+                color: aliceblue !important;
+                
+            }
+        
+            .titulo a:hover {
+                color: rgb(136, 63, 10) !important;
+            }
+
+            .titulo2 {
+                display: none;
+            }
+            
         }
-    
-        .titulo{
-            display: none !important;
-        }
-    
+
         .nuevo-menu {
-            text-align: left !important;
+            text-align: center !important;
             display: flex !important;
             flex-wrap: wrap !important;
+            font-size: 12px;
+            background-color: aliceblue;
         }
     
         .nuevo-menu ul li {
-            font-size: 15px !important;
+            font-size: 12px !important;
             display: inline-block !important;
         }
 
@@ -35,42 +78,68 @@ $p-general: 40px;
 
     @media only screen and (min-width: 601px) and (max-width: 1024px) {
         .cabeceraHeader {
-            display: flex;
-            justify-content: left;
-        }
-        .titulo{
-            display: none;
+            display: flex !important;
+            justify-content: center !important;
+            .titulo  {
+                text-decoration: none !important;
+                text-align: center !important;
+                color: aliceblue !important;
+                font-size: 50px !important;
+        
+            }
+            .titulo a:hover {
+                color: rgb(136, 63, 10) !important;
+            }
+
+            .titulo2 {
+                display: none;
+            }
         }
     
         .nuevo-menu {
-            text-align: left;
-            display: flex;
-            flex-wrap: wrap;
+            text-align: center !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            font-size: 18px;
+            background-color: aliceblue;
         }
     
         .nuevo-menu ul li {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
     @media only screen and (min-width: 1024px) and (max-width: 1600px) {
         .cabeceraHeader {
-            display: flex;
-            justify-content: left;
-        }
+            text-align: center !important;
+            color: aliceblue !important;
+            font-size: 40px !important;
+
+            .titulo {
+                text-decoration: none !important;
+                text-align: center !important;
+            }
     
-        .titulo{
-            display: none;
-        }
+            .titulo a:hover {
+                color: rgb(136, 63, 10) !important;
+            }
     
+            .titulo2 {
+                color: rgb(136, 63, 10);
+                font-size: 22px;
+            }
+        }
+
         .nuevo-menu {
-            text-align: left;
-            display: flex;
-            flex-wrap: wrap;
+            text-align: center !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            font-size: 22px;
+            background-color: aliceblue;
         }
     
         .nuevo-menu li {
-            font-size: 30px;
+            font-size: 22px;
         }
     }
 }

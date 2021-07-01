@@ -12,5 +12,13 @@
     "nodemon": "^2.0.7"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uriel-27/Repository-IL.CIOCCOLATO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Uriel-27/Repository-IL.CIOCCOLATO/issues"
+  },
+  "homepage": "https://github.com/Uriel-27/Repository-IL.CIOCCOLATO#readme",
   "description": ""
 }
