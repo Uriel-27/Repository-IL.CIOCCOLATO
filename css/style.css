@@ -217,3 +217,21 @@ body .imagen-combo3:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
+.carousel-inner {
+  padding: 20px 200px;
+}
+
+/* pagina historia */
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.historia-parrafo {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+
