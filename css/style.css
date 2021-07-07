@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -139,32 +140,43 @@ body {
   color: aliceblue !important;
   font-family: "Righteous" !important;
   /* index-principal */
+  /* pagina historia */
 }
-body .noticiaContainer {
+body .noticiaPrincipal {
   margin-left: 210px !important;
   margin-right: 210px !important;
   padding: 50px 0;
+}
+body .titulo-inicio {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-family: "Great Vibes", cursive;
 }
 body .imagen-noticia-principal {
   border: #883f0a solid 10px;
   border-radius: 10px;
   position: relative;
   left: 45px;
-}
-body .titulo-inicio {
-  padding-bottom: 30px !important;
+  filter: drop-shadow(0 0 0.5rem black);
 }
 body .parrafo-inicio {
   font-size: 30px !important;
   padding-top: 50px;
   position: relative;
   right: 50px;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+body .noticiaContainer {
+  background-color: #b4ac9d;
 }
 body .Combos {
-  font-size: 50px !important;
+  font-size: 70px;
   text-align: center !important;
   color: #002a3c;
   padding-bottom: 10px;
+  font-family: "Great Vibes", cursive;
 }
 body .masVendido {
   display: flex;
@@ -172,6 +184,7 @@ body .masVendido {
   justify-content: space-evenly;
   flex-wrap: wrap !important;
   padding-top: 20px;
+  filter: drop-shadow(0 0 0.5rem black);
 }
 body .card-text {
   color: #002a3c;
@@ -215,23 +228,20 @@ body .imagen-combo3:hover {
   transition: 1s;
   border-radius: 10px;
 }
-
-/*# sourceMappingURL=style.css.map */
-.carousel-inner {
-  padding: 20px 200px;
+body .carousel {
+  padding: 40px 170px;
 }
-
-/* pagina historia */
-
-.flex {
+body .carousel-fondo {
+  background-image: url(../../imágenes/Chocolate-coffee.jpg) !important;
+}
+body .flex {
   display: flex;
   justify-content: center;
 }
-
-.historia-parrafo {
+body .historia-parrafo {
   width: 500px;
   height: 500px;
   margin: 20px;
 }
 
-
+/*# sourceMappingURL=style.css.map */
