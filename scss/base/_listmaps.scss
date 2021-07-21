@@ -144,6 +144,50 @@ body {
         height: 500px;
         margin: 20px;
     }
+
+    /* contacto */
+
+    /* body */
+
+    .tituloContacto{
+        font-family: 'Great Vibes', cursive;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    .parrafoContacto{
+        display: flex;
+        justify-content: center !important;
+        flex-wrap: wrap;
+        font-size: 30px;
+        padding: 30px 60px;
+    }
+
+    .telefonoContacto{
+        display: flex;
+        justify-content: center !important;
+        flex-wrap: wrap;
+        font-size: 30px;
+    }
+
+    /* formulario */
+
+
+
+    /* footer */
+
+    .redesContacto{
+        display: flex;
+        justify-content: center !important;
+        font-size: 50px;
+    }
+
+    .redesImagenesContacto{
+        display: flex;
+        justify-content: center;
+
+    }
+
 }
 
 
