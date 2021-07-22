@@ -60,7 +60,7 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="historia.html">Quiénes somos?</a>
+                <a class="nav-link active" href="historia.html">¿Quiénes somos?</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -84,16 +84,35 @@
 
   <!-- seccion consultas -->
   <section>
-    <h2 class="tituloContacto">Contacto</h2>
+    <h2 class="tituloContacto">Contáctanos</h2>
 
-    <p class="parrafoContacto">Cualquier consulta que tengas podes hacernosla desde la cuenta de instagram @il.cioccolato_ ya que ahí es en la
-      que mas activos estamos.</p>
-
-    <p class="telefonoContacto">O llamanos al 1132823857</p> 
+    <p class="parrafoContacto">Cualquier consulta que tengas podes hacernosla desde nuestro formulario de acá abajo, la cuenta de instagram @il.cioccolato_ ya que ahí estamos más activos o llamanos al 1132823857</p>
 
     <!-- Formulario -->
 
+    <div class="seccionFormulario">
+    <h3 class="subtituloContacto">Dános tu opinión</h3>
 
+    <form class="formularioContacto" action="enviar.php" method="POST" name="contact-form">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="nombre">
+
+      <label for="mail">E-mail</label>
+      <input type="email" name="email" id="mail">
+
+      <label for="asunto">Asunto</label>
+      <input type="subject" id="asunto" name="asunto">
+
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  </section>
+
+  <section>
 
   </section>
 
